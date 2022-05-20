@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MFn-Um-Fbb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Instagram-->
+        <scene sceneID="EuY-T5-4tp">
+            <objects>
+                <viewController id="MFn-Um-Fbb" customClass="InstagramViewController" customModule="AggregateSNSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6zG-sg-WsU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeD-T5-lIJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8A5-OM-ZkG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8A5-OM-ZkG" firstAttribute="trailing" secondItem="GeD-T5-lIJ" secondAttribute="trailing" id="Gio-Gc-qJc"/>
+                            <constraint firstItem="8A5-OM-ZkG" firstAttribute="bottom" secondItem="GeD-T5-lIJ" secondAttribute="bottom" id="LFk-Qs-myv"/>
+                            <constraint firstItem="GeD-T5-lIJ" firstAttribute="leading" secondItem="8A5-OM-ZkG" secondAttribute="leading" id="c8j-L6-88O"/>
+                            <constraint firstItem="GeD-T5-lIJ" firstAttribute="top" secondItem="8A5-OM-ZkG" secondAttribute="top" id="lkh-fs-hCf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Instagram" image="square.and.arrow.up.circle.fill" catalog="system" id="5Dz-cj-d8c"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="instaWebView" destination="GeD-T5-lIJ" id="VPL-Xh-Exn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ne8-pZ-wO5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
