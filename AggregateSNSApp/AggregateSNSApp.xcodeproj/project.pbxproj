@@ -16,6 +16,10 @@
 		B4BA44FE2835F59900F65E6E /* AggregateSNSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA44FD2835F59900F65E6E /* AggregateSNSAppTests.swift */; };
 		B4BA45082835F59900F65E6E /* AggregateSNSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA45072835F59900F65E6E /* AggregateSNSAppUITests.swift */; };
 		B4BA450A2835F59900F65E6E /* AggregateSNSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA45092835F59900F65E6E /* AggregateSNSAppUITestsLaunchTests.swift */; };
+		B4BA45182835F78F00F65E6E /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA45172835F78F00F65E6E /* InstagramViewController.swift */; };
+		B4BA451A2835F79C00F65E6E /* Instagram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BA45192835F79C00F65E6E /* Instagram.storyboard */; };
+		B4BA451D2835F9FB00F65E6E /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA451C2835F9FB00F65E6E /* TwitterViewController.swift */; };
+		B4BA451F2835FA0700F65E6E /* Twitter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BA451E2835FA0700F65E6E /* Twitter.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		B4BA45032835F59900F65E6E /* AggregateSNSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AggregateSNSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BA45072835F59900F65E6E /* AggregateSNSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateSNSAppUITests.swift; sourceTree = "<group>"; };
 		B4BA45092835F59900F65E6E /* AggregateSNSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateSNSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4BA45172835F78F00F65E6E /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		B4BA45192835F79C00F65E6E /* Instagram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instagram.storyboard; sourceTree = "<group>"; };
+		B4BA451C2835F9FB00F65E6E /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		B4BA451E2835FA0700F65E6E /* Twitter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Twitter.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		B4BA44E52835F59400F65E6E /* AggregateSNSApp */ = {
 			isa = PBXGroup;
 			children = (
+				B4BA451B2835F9E300F65E6E /* Twitter */,
+				B4BA45162835F76D00F65E6E /* Instagram */,
 				B4BA44E62835F59400F65E6E /* AppDelegate.swift */,
 				B4BA44E82835F59400F65E6E /* SceneDelegate.swift */,
 				B4BA44EA2835F59400F65E6E /* ViewController.swift */,
@@ -125,6 +135,24 @@
 				B4BA45092835F59900F65E6E /* AggregateSNSAppUITestsLaunchTests.swift */,
 			);
 			path = AggregateSNSAppUITests;
+			sourceTree = "<group>";
+		};
+		B4BA45162835F76D00F65E6E /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA45172835F78F00F65E6E /* InstagramViewController.swift */,
+				B4BA45192835F79C00F65E6E /* Instagram.storyboard */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		B4BA451B2835F9E300F65E6E /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA451C2835F9FB00F65E6E /* TwitterViewController.swift */,
+				B4BA451E2835FA0700F65E6E /* Twitter.storyboard */,
+			);
+			path = Twitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4BA44F32835F59900F65E6E /* LaunchScreen.storyboard in Resources */,
+				B4BA451F2835FA0700F65E6E /* Twitter.storyboard in Resources */,
+				B4BA451A2835F79C00F65E6E /* Instagram.storyboard in Resources */,
 				B4BA44F02835F59900F65E6E /* Assets.xcassets in Resources */,
 				B4BA44EE2835F59400F65E6E /* Main.storyboard in Resources */,
 			);
@@ -259,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4BA44EB2835F59400F65E6E /* ViewController.swift in Sources */,
+				B4BA45182835F78F00F65E6E /* InstagramViewController.swift in Sources */,
+				B4BA451D2835F9FB00F65E6E /* TwitterViewController.swift in Sources */,
 				B4BA44E72835F59400F65E6E /* AppDelegate.swift in Sources */,
 				B4BA44E92835F59400F65E6E /* SceneDelegate.swift in Sources */,
 			);
@@ -439,11 +471,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZCR4QT36HT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AggregateSNSApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Instagram;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,11 +499,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZCR4QT36HT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AggregateSNSApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Instagram;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
